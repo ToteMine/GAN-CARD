@@ -1,7 +1,7 @@
 import numpy as np
 from pathlib import Path
 import onnxruntime as ort
-from torchvision import transforms  # war vorher nicht drin!
+from PIL import Image  # Statt torchvision
 import os
 import sys
 
@@ -33,10 +33,9 @@ class ONNXImageGenerator:
         img = np.transpose(img, (1, 2, 0))  # (H, W, C)
         img = (img + 1) / 2  # von [-1,1] auf [0,1]
         img = np.clip(img, 0, 1)
-        img = (img * 255).astype(np.uint8)  # PIL erwartet uint8
+        img = (img * 255).astype(np.uint8)  # Für PIL: uint8 (0-255)
 
-        to_pil = transforms.ToPILImage()
-        return to_pil(img)
+        return Image.fromarray(img)  # Statt transforms.ToPILImage()
 
 
 def main(seed=None):
