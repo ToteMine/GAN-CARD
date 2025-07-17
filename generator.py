@@ -1,20 +1,27 @@
 import numpy as np
 from pathlib import Path
-from torchvision import transforms
 import onnxruntime as ort
-import matplotlib.pyplot as plt
+from torchvision import transforms  # war vorher nicht drin!
+import os
+import sys
 
 
-OUTPUT_PATH = Path(__file__).parent
+def get_resource_path(relative_path):
+    """Pfad zur Datei korrekt auflösen – für Skript & PyInstaller-EXE"""
+    try:
+        base_path = sys._MEIPASS  # Wird von PyInstaller gesetzt
+    except AttributeError:
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
 
 
 class ONNXImageGenerator:
     def __init__(self, model_path, input_dim=512, device='cuda'):
-        self.model_path = model_path
+        self.model_path = get_resource_path(model_path)
         self.input_dim = input_dim
 
         providers = ['CUDAExecutionProvider'] if device == 'cuda' else ['CPUExecutionProvider']
-        self.session = ort.InferenceSession(model_path, providers=providers)
+        self.session = ort.InferenceSession(self.model_path, providers=providers)
 
         self.input_name = self.session.get_inputs()[0].name
 
