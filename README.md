@@ -7,7 +7,7 @@
 Zum Ausführen der Software "GAN-CARD" einfach das ["gui_v8.zip" Archiv](https://github.com/ToteMine/GAN-CARD/blob/main/gui_v8.zip) entpacken und die .exe ausführen.
 
 Beispiele für generierte Bilder und GIFs lassen sich unter [Generiert](https://github.com/ToteMine/GAN-CARD/tree/main/Generiert) finden.
-Unter dem [old](https://github.com/ToteMine/GAN-CARD/tree/main/old)] Ordner lassen sich sowohl die alten [GAN-Versionen](https://github.com/ToteMine/GAN-CARD/tree/main/old/OLD-GAN-VERSIONS) als auch die alten [GUI-Versionen](https://github.com/ToteMine/GAN-CARD/tree/main/old/OLD-GUI-VERSIONS) finden.
+Unter dem [old](https://github.com/ToteMine/GAN-CARD/tree/main/old) Ordner lassen sich sowohl die alten [GAN-Versionen](https://github.com/ToteMine/GAN-CARD/tree/main/old/OLD-GAN-VERSIONS) als auch die alten [GUI-Versionen](https://github.com/ToteMine/GAN-CARD/tree/main/old/OLD-GUI-VERSIONS) finden.
 
 Über den _Generieren_ Tab lassen sich zufällige Bilder und GIFs generieren. Für die GIFs lassen sich
 die Animationsteps, die Anzahl der Keypoints und die FPS einstellen. Außerdem ist es möglich eine Grußformel und die jeweilige Ecke des Bildes/GIFs einzufügen.
