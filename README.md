@@ -11,7 +11,7 @@ Zum Ausführen der Software "GAN-CARD" einfach das ["gui_v8.zip" Archiv](https:/
 ### Ausführen über die Python-File
 Zum Ausführen über die Python File müssen sich die ["gui_v8.py"](https://github.com/ToteMine/GAN-CARD/blob/main/gui_v8.py), 
 die ["generator.py"](https://github.com/ToteMine/GAN-CARD/blob/main/generator.py), ["ganGenerator.onnx"](https://github.com/ToteMine/GAN-CARD/blob/main/ganGenerator.onnx) Files und der ["assets"](https://github.com/ToteMine/GAN-CARD/tree/main/assets)
-Ordner in enem gemeinsamen Ordner befinden. Außerdem werden die Libraries aus der ["requirements.txt"](https://github.com/ToteMine/GAN-CARD/blob/main/requirements.txt) benötigt. Das Programm wird anschließend über die ["gui_v8.py"](https://github.com/ToteMine/GAN-CARD/blob/main/gui_v8.py) gestartet.
+Ordner in enem gemeinsamen Ordner befinden. Außerdem wird das environment aus der ["GAN-CARD.yml"](https://github.com/ToteMine/GAN-CARD/blob/main/GAN-CARD.yml) benötigt. Das Programm wird anschließend über die ["gui_v8.py"](https://github.com/ToteMine/GAN-CARD/blob/main/gui_v8.py) gestartet.
 
 ### Informationen zum Repo
 Beispiele für generierte Bilder und GIFs lassen sich unter [Generiert](https://github.com/ToteMine/GAN-CARD/tree/main/Generiert) finden.
